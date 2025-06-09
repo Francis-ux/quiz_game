@@ -84,57 +84,57 @@ This is a simple multiplayer trivia game built with Laravel. Users can register,
 ## 🛠️ Installation
 
 1. **Clone the repository**
-   ```bash
+   bash
    git clone https://github.com/your-username/laravel-quiz-game.git
    cd laravel-quiz-game
-````
+
 
 2. **Install dependencies**
 
-   ```bash
+   bash
    composer install
-   ```
+   
 
 3. **Create `.env` file**
 
-   ```bash
+   bash
    cp .env.example .env
-   ```
+   
 
 4. **Generate application key**
 
-   ```bash
+   bash
    php artisan key:generate
-   ```
+   
 
 5. **Set up database**
 
    * Create a database (e.g. `quiz_game`)
    * Update `.env`:
 
-     ```
+     
      DB_DATABASE=quiz_game
      DB_USERNAME=your_mysql_username
      DB_PASSWORD=your_mysql_password
-     ```
+     
 
 6. **Run migrations and seed demo questions**
 
-   ```bash
+   bash
    php artisan migrate --seed
-   ```
+   
 
 7. **Serve the app**
 
-   ```bash
+   bash
    php artisan serve
-   ```
+   
 
 8. Open in browser:
 
-   ```
+   
    http://localhost:8000
-   ```
+   
 
 ## 🧪 How to Use
 
@@ -142,12 +142,6 @@ This is a simple multiplayer trivia game built with Laravel. Users can register,
 2. Click "Play Quiz" to start answering questions.
 3. Submit your answers — your score and time will be saved.
 4. Visit the "Leaderboard" to see rankings of all players.
-
-## 📸 Screenshots
-
-| Quiz Interface   | Leaderboard      |
-| ---------------- | ---------------- |
-| (Add screenshot) | (Add screenshot) |
 
 ## 📌 Technologies Used
 
@@ -158,7 +152,7 @@ This is a simple multiplayer trivia game built with Laravel. Users can register,
 
 ## 🧑‍💻 Author
 
-**Geeky Programmer**
+Geeky Programmer
 
 ## 📃 License
 
