@@ -60,7 +60,106 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## About Multiplayer Quiz Game with Leaderboard
+# 🎯 Laravel Multiplayer Quiz Game with Leaderboard
 
-Multiplayer Quiz Game with Leaderboard or Quiz Game is a web application built with Laravel that allows users to play a quiz game with other players. The game has a leaderboard where players can see how they rank compared to other players. The game is built with Laravel and uses its features such as routing, dependency injection, session and cache storage, database ORM, schema migrations, background job processing, and real-time event broadcasting.
+This is a simple multiplayer trivia game built with Laravel. Users can register, log in, play timed multiple-choice quizzes, and view a global leaderboard based on their scores and completion time.
 
+## 🚀 Features
+
+- ✅ Manual authentication (no Breeze, Jetstream, or Fortify)
+- ✅ Multiple-choice trivia questions
+- ✅ Automatic scoring and time tracking
+- ✅ Leaderboard showing top players
+- ✅ Clean UI with Blade templating
+- ✅ Built with Laravel 11
+
+## 📂 Project Structure
+
+- `app/Models/Question.php` - Quiz questions model  
+- `app/Models/Score.php` - Stores user scores  
+- `app/Http/Controllers/AuthController.php` - Manual login & registration  
+- `app/Http/Controllers/GameController.php` - Game logic and leaderboard  
+- `resources/views/` - Blade templates for login, register, quiz, leaderboard, etc.
+
+## 🛠️ Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/laravel-quiz-game.git
+   cd laravel-quiz-game
+````
+
+2. **Install dependencies**
+
+   ```bash
+   composer install
+   ```
+
+3. **Create `.env` file**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Generate application key**
+
+   ```bash
+   php artisan key:generate
+   ```
+
+5. **Set up database**
+
+   * Create a database (e.g. `quiz_game`)
+   * Update `.env`:
+
+     ```
+     DB_DATABASE=quiz_game
+     DB_USERNAME=your_mysql_username
+     DB_PASSWORD=your_mysql_password
+     ```
+
+6. **Run migrations and seed demo questions**
+
+   ```bash
+   php artisan migrate --seed
+   ```
+
+7. **Serve the app**
+
+   ```bash
+   php artisan serve
+   ```
+
+8. Open in browser:
+
+   ```
+   http://localhost:8000
+   ```
+
+## 🧪 How to Use
+
+1. Register a new user account.
+2. Click "Play Quiz" to start answering questions.
+3. Submit your answers — your score and time will be saved.
+4. Visit the "Leaderboard" to see rankings of all players.
+
+## 📸 Screenshots
+
+| Quiz Interface   | Leaderboard      |
+| ---------------- | ---------------- |
+| (Add screenshot) | (Add screenshot) |
+
+## 📌 Technologies Used
+
+* Laravel 11 (PHP)
+* Blade Templates (HTML/CSS)
+* JavaScript (`fetch` API)
+* MySQL or SQLite
+
+## 🧑‍💻 Author
+
+**Geeky Programmer**
+
+## 📃 License
+
+This project is open-source and free to use under the [MIT License](LICENSE).
